@@ -1,0 +1,118 @@
+.projects-wrapper {
+  min-height: 600px;
+  max-width: 1200px;
+  width: 90vw;
+  padding: 2rem;
+  margin: 0 auto;
+}
+.projects-heading-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.project-title {
+  font-size: 3.5rem;
+}
+.contact-project {
+  display: inline-block;
+  max-width: 175px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2.28571px;
+  line-height: 1.625;
+  font-weight: 400;
+  border-bottom: 2px solid var(--border-bottom);
+  padding-bottom: 0.5rem;
+}
+.projects-gird {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 1.5rem;
+}
+.project-item {
+  gap: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.project-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+.project-item:hover::before {
+  background-color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+.project-detail-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.project-name {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: var(--white);
+}
+.project-skill {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--p-text-color);
+}
+.project-button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.project-item:hover .project-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.project-url {
+  background-color: transparent;
+  color: var(--white);
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2.28571px;
+  line-height: 1.625;
+  border-bottom: 2px solid var(--border-bottom);
+}
+@media screen and (max-width: 767px) {
+  .projects-gird {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .project-title {
+    font-size: 1.5rem;
+  }
+  .contact-project {
+    font-size: 0.85rem;
+  }
+  .project-url {
+    font-size: 0.5rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+}
