@@ -7,7 +7,9 @@ const Projects = () => {
     <div className='projects-wrapper'>
       <div className='projects-heading-wrapper'>
         <h3 className='project-title'>Projects</h3>
-        <p className='contact-project'>Contact Me</p>
+        <a href='#footer' className='contact-project'>
+          Contact Me
+        </a>
       </div>
       <div className='projects-gird'>
         {projectArray.map((item, index) => {

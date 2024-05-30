@@ -16,7 +16,7 @@ const Hero = () => {
             Im a frontend developer passionate about building accessible web
             apps that users love.
           </p>
-          <p className='contact-text'>Contact Me</p>
+          <p className='contact-text'>Skills</p>
         </div>
         <div className='hero-img-wrapper'>
           <img src={louai} alt={louai} className='hero-img' />

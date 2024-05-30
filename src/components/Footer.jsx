@@ -7,7 +7,7 @@ import ringfooter from '../assets/images/pattern-rings.svg';
 const Footer = () => {
   return (
     <>
-      <footer>
+      <footer id='footer'>
         <div className='footer-wrapper'>
           <div className='footer-heading-container'>
             <h2 className='footer-title'>Contact</h2>
