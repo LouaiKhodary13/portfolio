@@ -3,7 +3,6 @@ import '../styles/header.css';
 import github from '../assets/images/icon-github.svg';
 import frontendmentor from '../assets/images/icon-frontend-mentor.svg';
 import linkedin from '../assets/images/icon-linkedin.svg';
-import twitter from '../assets/images/icon-twitter.svg';
 
 const Header = () => {
   return (
@@ -35,11 +34,6 @@ const Header = () => {
             rel='noreferrer'
           >
             <img src={linkedin} alt={linkedin} />
-          </a>
-        </li>
-        <li>
-          <a href='#'>
-            <img src={twitter} alt={twitter} />
           </a>
         </li>
       </ul>

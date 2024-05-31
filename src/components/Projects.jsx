@@ -16,11 +16,11 @@ const Projects = () => {
           return (
             <div className='project-item' key={index}>
               <img src={item.imgBig} alt={item.imgBig} />
-              <div class='project-button-container'>
-                <a href='#' class='project-url'>
+              <div className='project-button-container'>
+                <a href={item.code} className='project-url' target='_blank'>
                   View code
                 </a>
-                <a href='#' class='project-url'>
+                <a href={item.project} className='project-url' target='_blank'>
                   VIEW project
                 </a>
               </div>

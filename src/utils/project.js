@@ -19,7 +19,7 @@ export const projectArray = [
     id: new Date(),
     name: 'Comfy Sloth Store',
     imgBig: project7,
-    skills: 'React, Redux, Styled-Components',
+    skills: 'React, Styled-Components',
     project: 'https://react-comfy-sloth-ecommerce-store.netlify.app/',
     code: 'https://github.com/LouaiKhodary13/react-comfy-sloth-ecommerce',
   },

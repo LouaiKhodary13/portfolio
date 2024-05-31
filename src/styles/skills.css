@@ -27,7 +27,7 @@
 .skill-title {
   color: var(--white);
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 1.75 rem;
 }
 .skill-date {
   color: var(--p-text-color);
